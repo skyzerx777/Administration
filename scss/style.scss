@@ -4,7 +4,6 @@
     margin: 0;
     padding: 0;
     font-family: "Roboto", sans-serif;
-    color: aliceblue;
 }
 
 .container {
@@ -17,6 +16,7 @@
 
 .navbar {
     display: flex;
+    color: aliceblue;
 
     @media (max-width: 768px) {
         flex-direction: column;
@@ -60,43 +60,39 @@
 
         &:last-of-type {
             margin-right: 10px;
-
-            &::after {
-                display: none;
-            }
         }
     }
 
     &__text {
         font-size: 1.25rem;
+        letter-spacing: -1px;
 
         @media (max-width: 768px) {
             font-size: 1rem;
         }
+    }
+
+    &__icon {
+        font-size: 1.5rem;
+        cursor: pointer;
+        transition: color 0.1s linear;
+
+        @media (max-width: 768px) {
+            font-size: 1.25rem;
+        }
+
+        &:hover {
+            color: #000000;
+        }
+    }
+    .icon_user {
+        font-size: 2rem;
     }
 }
 
 .text {
     &_thin {
         font-weight: 100;
-    }
-}
-
-.icon {
-    font-size: 1.5rem;
-    cursor: pointer;
-    transition: color 0.1s linear;
-
-    @media (max-width: 768px) {
-        font-size: 1.25rem;
-    }
-
-    &_user {
-        font-size: 2rem;
-    }
-
-    &:hover {
-        color: #000000;
     }
 }
 
@@ -119,5 +115,73 @@
 
     &_red {
         background-color: red;
+    }
+}
+
+.side-panel {
+    color: aliceblue;
+    max-width: 300px;
+    background-color: #023452;
+    min-height: 100vh;
+
+    @media (max-width: 768px) {
+        display: none;
+    }
+}
+
+.user {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+
+    &__info {
+        line-height: 1.5rem;
+    }
+
+    &__status {
+        display: flex;
+        align-items: center;
+    }
+
+    .icon_user {
+        font-size: 3.5rem;
+    }
+
+    .icon_status {
+        color: green;
+        font-size: 0.5rem;
+        margin-right: 10px;
+    }
+}
+
+.navigation {
+    &__header {
+        text-transform: uppercase;
+        width: 100%;
+        padding: 10px;
+        background-color: #012033;
+        box-sizing: border-box;
+        color: darkgray;
+    }
+
+    &__item {
+        color: rgb(173, 173, 173);
+        padding: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+        transition: background-color 0.1s linear;
+
+        &:hover {
+            background-color: #1878af;
+            color: aliceblue;
+        }
+
+        .icon {
+            text-align: center;
+            width: 50px;
+        }
     }
 }
