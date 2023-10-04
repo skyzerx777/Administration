@@ -14,7 +14,7 @@
     <title>Administrative</title>
   </head>
   <body>
-    <header class="header container">
+    <header class="header">
       <nav class="navbar">
         <div class="navbar__logo">
           Innovations<span class="text_thin">ADM</span>
@@ -76,6 +76,133 @@
           <i class="fa-solid fa-chevron-left"></i>
         </div>
       </aside>
+      <div class="container">
+        <div class="row row_profile">
+          <p class="profile__text">Profile</p>
+          <p class="profile__info">
+            <i class="fa-solid fa-person icon"></i> Admin
+            <span class="text_gray">> Profile</span>
+          </p>
+        </div>
+        <div class="row">
+          <div class="column">
+            <div class="edit-form">
+              <form class="form">
+                <p class="form__header">Edit Username</p>
+                <div class="input-container">
+                  <label class="form__label"
+                    >New username
+                    <input
+                      type="text"
+                      placeholder="Username"
+                      class="form__input"
+                  /></label>
+                  <div class="input__options">
+                    <i class="fa-solid fa-ellipsis"></i>
+                    <div class="badge badge_gray">2</div>
+                  </div>
+                </div>
+                <div class="input-container">
+                  <label class="form__label"
+                    >Password
+                    <input
+                      type="text"
+                      placeholder="Password"
+                      class="form__input"
+                  /></label>
+                  <div class="input__options">
+                    <i class="fa-solid fa-ellipsis"></i>
+                    <div class="badge badge_gray">2</div>
+                  </div>
+                </div>
+                <hr class="form__line" />
+                <input type="submit" value="Submit" class="form__button" />
+              </form>
+            </div>
+            <div class="edit-form">
+              <form class="form">
+                <p class="form__header">Edit Password</p>
+                <div class="input-container">
+                  <label class="form__label"
+                    >Old Password
+                    <input
+                      type="text"
+                      placeholder="Password"
+                      class="form__input"
+                  /></label>
+                  <div class="input__options">
+                    <i class="fa-solid fa-ellipsis"></i>
+                    <div class="badge badge_gray">2</div>
+                  </div>
+                </div>
+                <div class="input-container">
+                  <label class="form__label"
+                    >New Password
+                    <input
+                      type="text"
+                      placeholder="Password"
+                      class="form__input"
+                  /></label>
+                  <div class="input__options">
+                    <i class="fa-solid fa-clock-rotate-left"></i>
+                  </div>
+                </div>
+                <div class="input-container">
+                  <label class="form__label"
+                    >Confirm password
+                    <input
+                      type="text"
+                      placeholder="Password"
+                      class="form__input"
+                  /></label>
+                  <div class="input__options">
+                    <i class="fa-solid fa-clock-rotate-left"></i>
+                  </div>
+                </div>
+                <hr class="form__line" />
+                <input type="submit" value="Submit" class="form__button" />
+              </form>
+            </div>
+          </div>
+          <div class="column">
+            <div class="edit-form">
+              <form class="form">
+                <p class="form__header">Edit Email</p>
+                <div class="input-container">
+                  <label class="form__label"
+                    >New Email
+                    <input type="text" placeholder="Email" class="form__input"
+                  /></label>
+                </div>
+                <div class="input-container">
+                  <label class="form__label"
+                    >Password
+                    <input
+                      type="text"
+                      placeholder="Password"
+                      class="form__input"
+                  /></label>
+                  <div class="input__options">
+                    <i class="fa-solid fa-clock-rotate-left"></i>
+                  </div>
+                </div>
+                <hr class="form__line" />
+                <input type="submit" value="Submit" class="form__button" />
+              </form>
+            </div>
+            <div class="edit-form">
+              <form class="form">
+                <p class="form__header">Edit Image</p>
+                <button class="form__button form__button_image">
+                  Please open the image
+                </button>
+                <hr class="form__line" />
+                <input type="submit" value="Submit" class="form__button" />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
   </body>
 </html>
